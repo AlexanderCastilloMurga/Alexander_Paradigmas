@@ -1,20 +1,44 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
-	<body>
-		<button onclick="getMyIpHttp()"> get my IP (HttpRequest) </button>
-                <button onclick="getMyIpFetch()"> get random users (Fetch) </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertir JSON a Imagen</title>
+</head>
+<body>
 
-		
-                <button onclick="getMyIp()"> get my IP (Jquery) </button>
-                <button onclick="getMyData()"> get my Random users (Jquery) </button>
+        <h1>Apis Personajes Disney</h1>
+
+        <h2>Personajes aleatorias por distintos medios</h2>
+
+        <h3>Alexander Castillo Murga</h3>
+        
+        <button onclick="convertirJsonAImagen()">Generar imagen</button>
+        <div id="resultado1"></div><br>      
+
+        <button onclick="convertirJsonAImagenConFetch()">Generar imagen </button>
+        <div id="resultado2"></div><br>     
+
+	<button onclick="llamarConvertirViaCDN()">Generar imagen</button>
+        <div id="resultado3"></div><br>              
+        
+        <label for="cantidadImagenes">Selecciona la cantidad de imágenes:</label>
+        <select id="cantidadImagenes">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="5">5</option>
+        </select>
+
+        <button onclick="ConvertirLocal()">Generar imagen</button>
+        <div id="resultado4"></div><br><br>
+    
+        <button onclick="listaDePersonajes()">Lista de personajes de Disney</button>
+        <div id="resultado5"></div><br>
 
 
-                <div id="resultado"></div>
-
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="api.js"></script>
-
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="apiDisney.js"></script>
+<script src="jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="apiDisney.css">
 </body>
 </html>

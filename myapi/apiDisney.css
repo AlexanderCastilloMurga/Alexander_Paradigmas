@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+button {
+    background-color: #db3434;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #b92929;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+#cantidadImagenes {
+    margin-right: 10px;
+}
+
+#resultado1, #resultado2, #resultado3, #resultado4, #resultado5 {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+#resultado1 img, #resultado2 img, #resultado3 img, #resultado4 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+#resultado5 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#resultado5 li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.dog-selector {
+    margin-right: 10px;
+}
+
+.get-dog {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f44242;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.get-dog:hover {
+    background-color: #b22c2c;
+}
+
+.demo-image {
+    margin-top: 20px;
+    max-width: 100%;
+}
